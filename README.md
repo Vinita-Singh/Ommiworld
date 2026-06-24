@@ -1,19 +1,19 @@
-# 👶 Mumzworld AI Assistant | Track B Submission
+# 👶 Ommiworld AI Assistant | Track B Submission
 
-## **Track**: AI-Native Product Intern (Track B)
+
 
 ---
 
 ## 📝 One-Paragraph Summary
 
-**Mumzworld AI Assistant** is a bilingual AI-powered recommendation engine that solves a real problem for first-time and busy mothers in the GCC: the overwhelm of choosing the right baby products. When a mom can't figure out what to buy (whether it's equipment for a 6-month-old starting solids or symptom management for a feverish infant), she describes her situation in natural language, and the AI returns curated product recommendations with relevant health advice—in both English and Arabic. The app is built with Streamlit, Llama 3.3 70B via Groq's free API, and includes a language toggle for a fully native bilingual experience.
+**Ommi World AI Assistant** is a bilingual AI-powered recommendation engine that solves a real problem for first-time and busy mothers in the GCC: the overwhelm of choosing the right baby products. When a mom can't figure out what to buy (whether it's equipment for a 6-month-old starting solids or symptom management for a feverish infant), she describes her situation in natural language, and the AI returns curated product recommendations with relevant health advice—in both English and Arabic. The app is built with Streamlit, Llama 3.3 70B via Groq's free API, and includes a language toggle for a fully native bilingual experience.
 
 ---
 
 ## 🔍 Discovery
 
-### The Persona: Fatima
-- **Name**: Fatima Al-Mansouri
+### The Persona: Yatima
+- **Name**: Yatima Al-Mansouri
 - **Age**: 28, first-time mother in Dubai
 - **Situation**: Has a 6-month-old son (Zain) and a 2-year-old daughter (Nora)
 - **Goals**: Find the right products to keep her kids healthy, happy, and developmentally on track without overwhelming herself with options
@@ -21,10 +21,10 @@
   - Doesn't know what specific equipment or products she needs for each developmental stage
   - Worried about giving wrong medicines or products without professional guidance
   - Reads conflicting advice online (Arabic forums, English mom blogs, Instagram)
-  - Doesn't have time to scroll through hundreds of Mumzworld products to find the right ones
+  - Doesn't have time to scroll through hundreds of Ommi World products to find the right ones
   - Prefers information in Arabic but some products only have English descriptions
 
-### Problems I Identified on Mumzworld
+### Problems I Identified on Ommi World
 
 1. **Search Overwhelm** - Searching "6-month-old" returns 300+ products with no curation
 2. **Lack of Context** - A product listing doesn't explain *when* or *why* to buy it
@@ -52,7 +52,7 @@
 
 ### The AI-Native Insight
 
-This isn't a chatbot wrapper. It's using AI as a **product discovery layer**—turning unstructured parenting concerns into structured Mumzworld shopping lists. The LLM does semantic work: understanding developmental stages, symptom triage, product category mapping, and confidence scoring.
+This isn't a chatbot wrapper. It's using AI as a **product discovery layer**—turning unstructured parenting concerns into structured Ommi World shopping lists. The LLM does semantic work: understanding developmental stages, symptom triage, product category mapping, and confidence scoring.
 
 ---
 
@@ -99,13 +99,13 @@ This isn't a chatbot wrapper. It's using AI as a **product discovery layer**—t
 **Prompt 1: Initial Version (Failed)**
 ```
 You are a parenting advisor. The user has a baby situation. 
-Recommend products from Mumzworld and any helpful advice.
+Recommend products from Ommi World and any helpful advice.
 ```
 ❌ Model recommended specific medicines without disclaimers
 
 **Prompt 2: Iteration (Better)**
 ```
-You are a warm parenting advisor for Mumzworld.
+You are a warm parenting advisor for Ommi World.
 1. Acknowledge their concern
 2. Suggest 3-5 product categories
 3. If health-related: ALWAYS say "Consult your pediatrician"
@@ -116,13 +116,13 @@ You are a warm parenting advisor for Mumzworld.
 ```
 A parent has come to you with this situation: "{user_input}"
 
-Provide a warm, empathetic response. Then, list 3 to 5 specific product categories they should look for on Mumzworld to solve this situation. 
+Provide a warm, empathetic response. Then, list 3 to 5 specific product categories they should look for on Ommi World to solve this situation. 
 Briefly explain why they need each item.
 
 IMPORTANT: If the baby's situation involves illness, fever, pain, or discomfort, please include:
 1. Recommended baby medicines/supplements that can help (e.g., paracetamol, ibuprofen for babies, saline drops, etc.)
 2. Dosage guidelines (always recommend consulting a pediatrician)
-3. Safe medical products available on Mumzworld
+3. Safe medical products available on Ommi World
 
 Always emphasize consulting with a pediatrician before giving any medication. Keep the tone helpful and reassuring.
 ```
@@ -175,7 +175,7 @@ Always emphasize consulting with a pediatrician before giving any medication. Ke
 
 5. **Video Content** - Surface how-to videos
    - ❌ Requires curated video DB; licensing; out of scope
-   - 🔄 **Reconsider if**: Mumzworld has internal library
+   - 🔄 **Reconsider if**: Ommi World has internal library
 
 ---
 
@@ -204,7 +204,7 @@ Always emphasize consulting with a pediatrician before giving any medication. Ke
 - **Test (50%)**: Same + confidence % ("87% match for your situation")
 
 **Success Metrics**:
-- ✅ **Works**: 25%+ lift in Mumzworld CTR
+- ✅ **Works**: 25%+ lift in Ommi World CTR
 - ❌ **Flat**: <10% difference
 - 🚩 **Fails**: Test underperforms 15%+ (moms trust reviews more?)
 
@@ -238,12 +238,12 @@ Always emphasize consulting with a pediatrician before giving any medication. Ke
 
 ## 🚀 Prototype Access
 
-**GitHub Repo**: https://github.com/paulamartya25/mumzworld.in
+**GitHub Repo**: https://github.com/paulamartya25/Ommi World.in
 
 **Setup (Under 5 Min)**:
 ```bash
-git clone https://github.com/vinitasingh57/mumzworld.in.git
-cd mumzworld-ai
+git clone https://github.com/vinitasingh57/Ommi World.in.git
+cd Ommi World-ai
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -276,7 +276,7 @@ streamlit run app.py
 ## Project Structure 📁
 
 ```
-mumzworld-ai/
+Ommi World-ai/
 ├── app.py                 # Main Streamlit application
 ├── requirements.txt       # Python dependencies
 ├── .env                   # API keys (not in repo)
@@ -304,7 +304,7 @@ mumzworld-ai/
 
 ## What's Next 🔮
 
-1. **Product Database Integration** - Connect to real Mumzworld catalog for SKU recommendations
+1. **Product Database Integration** - Connect to real Ommi World catalog for SKU recommendations
 2. **Feedback Loop** - "Was this helpful?" ratings for continuous improvement
 3. **Symptom Severity Triage** - Enhanced pediatric decision-making
 4. **Personalization** - Remember previous queries; segment by baby age
@@ -312,7 +312,7 @@ mumzworld-ai/
 
 ---
 
-**Submitted**: April 29, 2026 | Track B | Mumzworld AI-Native Product Intern Assessment
+**Submitted**: April 29, 2026 | Track B | Ommi World AI-Native Product Intern Assessment
 
 ## Security & Privacy 🔐
 
