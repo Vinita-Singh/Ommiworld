@@ -1,4 +1,4 @@
-# 👶 Ommiworld AI Assistant | Track B Submission
+# 👶 Ommiworld AI Assistant 
 
 
 
@@ -281,10 +281,9 @@ Ommi World-ai/
 ├── requirements.txt       # Python dependencies
 ├── .env                   # API keys (not in repo)
 ├── .gitignore            # Git ignore rules
-├── README.md             # This file (Track B submission)
+├── README.md             # This file (Infomation of the project)
 ├── DOCUMENTATION.md      # Technical deep-dive
 ├── DEPLOYMENT.md         # Streamlit Cloud setup
-├── SUBMISSION_ASSESSMENT.md  # Track alignment analysis
 └── .github/workflows/deploy.yml  # GitHub Actions CI/CD
 ```
 
